@@ -1,0 +1,26 @@
+.drawer-body{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  height: 100vh;
+  transition: 0.5s all;
+  position: absolute;
+  left: -80vw;
+  top: 0;
+  background: #FFF;
+}
+
+.drawer-body--opened{
+  left: 0;
+  transition: 0.5s all;
+}
+
+.drawer-overlay{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 20%;
+}

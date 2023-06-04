@@ -1,0 +1,8 @@
+:root.light {
+  --color: #181814;
+  --background-start: #FFF;
+  --background-end: #F5F5F5;
+  --background: #ECF0F3;
+  --highlight: #0776B3;
+  --dark-highlight: #075d8c;
+}

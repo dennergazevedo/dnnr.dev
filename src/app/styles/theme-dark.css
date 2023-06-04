@@ -1,0 +1,8 @@
+:root.dark {
+  --color: #FFF;
+  --background-start: #181814;
+  --background-end: #111;
+  --background: #181814;
+  --highlight: #0776B3;
+  --dark-highlight: #075d8c;
+}
