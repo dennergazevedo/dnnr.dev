@@ -8,6 +8,7 @@ interface IPost{
   type: string
   banner: IBanner
   content: IContent
+  tech: string
 }
 
 interface IBanner{

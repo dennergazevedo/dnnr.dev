@@ -1,0 +1,3 @@
+interface PostCard{
+  post: IPost
+}

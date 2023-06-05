@@ -2,7 +2,7 @@
 import React, { Fragment } from 'react';
 import Link from 'next/link';
 
-import { techList } from './constants';
+import { techList } from '../../utils/constants';
 import IconButton from '@/components/IconButton';
 
 const Card: React.FC<TechCard> = ({ duration, name, site, techs } : TechCard) => {

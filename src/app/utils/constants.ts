@@ -1,6 +1,7 @@
 import { SiVtex } from 'react-icons/si'
 import { IoLogoJavascript, IoLogoNodejs, IoLogoHtml5, IoLogoCss3 } from 'react-icons/io'
 import { FaReact, FaDocker } from 'react-icons/fa'
+import { VscJson } from 'react-icons/vsc'
 
 export const techList = {
   'react': {
@@ -44,5 +45,11 @@ export const techList = {
     background: '#254BDD',
     color: '#FFF',
     Icon: IoLogoCss3
-  }
+  },
+  'json': {
+    link: 'https://www.json.org/json-pt.html',
+    background: '#D1D9E6',
+    color: '#000',
+    Icon: VscJson
+  },
 }

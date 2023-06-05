@@ -22,6 +22,7 @@ const GET_ALL_POSTS = gql`
       updatedAt
       createdAt
       type
+      tech
       banner {
         url
       }
@@ -42,6 +43,7 @@ const GET_POSTS_BY_TYPE = gql`
       updatedAt
       createdAt
       type
+      tech
       banner {
         url
       }
@@ -62,6 +64,7 @@ const GET_POSTS_BY_SLUG = gql`
       updatedAt
       createdAt
       type
+      tech
       banner {
         url
       }
