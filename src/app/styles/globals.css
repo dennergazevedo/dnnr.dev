@@ -10,8 +10,7 @@ body {
   overflow-x: hidden;
 
   @media (min-width: 640px){
-    height: 100vh;
-    overflow: hidden;
+    min-height: 100vh;
   }
 }
 
@@ -126,4 +125,11 @@ body {
   height: calc(100vh - constant(safe-area-inset-bottom)); /* Para dispositivos iOS modernos */
   height: calc(100vh - env(safe-area-inset-bottom)); /* Para dispositivos Android e iOS modernos */
   height: -webkit-fill-available; /* Para dispositivos iOS mais antigos */
+}
+
+.image-block{
+  @media (min-width: 640px){
+    width: 500px;
+    height: 500px;
+  }
 }

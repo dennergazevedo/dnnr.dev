@@ -11,7 +11,7 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
   const techArray: any = techList
 
   return (
-    <Link href={`/post?slug=${post?.slug}`} className='flex flex-col p-4 rounded-lg linear-bg-white shadow-white cursor-pointer hover:-translate-y-2 transition-all'>
+    <Link href={`/blog/post?slug=${post?.slug}`} className='flex flex-col p-4 rounded-lg linear-bg-white shadow-white cursor-pointer hover:-translate-y-2 transition-all'>
       <Image 
         src={post?.banner?.url} 
         alt={post?.title} 

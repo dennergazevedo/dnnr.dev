@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import './styles.css';
 
 import { RiInstagramLine, RiLinkedinFill, RiGithubLine } from 'react-icons/ri'
 import { IoLogoJavascript, IoLogoNodejs } from 'react-icons/io'
@@ -10,17 +9,17 @@ import Me from '@/assets/me.png'
 import IconButton from '@/components/IconButton';
 
 const Home: React.FC = () => {
-  
+
   return (
-    <section className='flex home-container items-center justify-center h-full'>
-      <div className='flex flex-col justify-start items-start text-body home-body'>
+    <section className='flex flex-col-reverse p-6 pt-32 items-center justify-center h-full md:flex-row md:p-32 md:pr-48 md:pl-48 md:pt-60'>
+      <div className='flex flex-col mt-12 justify-center items-center w-full md:w-1/2 md:mt-0 md:justify-start md:items-start'>
         <h3 className='text-1xl cursor-default mb-4 uppercase l-space-8'>
           Hello World!
         </h3>
-        <h1 className='home-title bold text-center cursor-default'>
+        <h1 className='text-4xl flex flex-col bold text-center cursor-default md:inline-block md:text-5xl'>
           Olá, eu sou <span className='c-highlight'>Denner Azevedo</span>
         </h1>
-        <p className='home-subtitle text-center cursor-default mt-4'>
+        <p className='text-base mb-6 text-center cursor-default mt-4 md:mb-0 md:text-2xl'>
           <span className='c-highlight'>Tech Lead</span> 
           &nbsp; & &nbsp;
           <span className='c-highlight'>Web Developer</span>
@@ -31,7 +30,7 @@ const Home: React.FC = () => {
         site em uma poderosa ferramenta de vendas, captação e retenção de clientes.
           {/* FERRAMENTA DE VENDAS, CAPTAÇÃO E RETENÇÃO DE CLIENTES */}
         </p>
-        <div className='flex container-wrap justify-between w-full'>
+        <div className='flex flex-col mt-0 justify-between w-full md:flex-row md:mt-16'>
           <div className='flex flex-col mt-12'>
             <label className='uppercase l-space-2 semi-bold'>
               social
@@ -67,8 +66,8 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-start items-end home-body'>
-        <div className='flex relative rounded-3xl linear-bg-white shadow-white profile-image'>
+      <div className='flex flex-col justify-start items-center w-full h-72 md:w-1/2 md:h-1/2 image-block'>
+        <div className='flex relative rounded-3xl linear-bg-white shadow-white w-4/5 h-full max-w-md image-block'>
           <Image src={Me} alt='profile-photo' className='flex rounded-3xl absolute bottom-0 left-0 w-full' />
         </div>
       </div>

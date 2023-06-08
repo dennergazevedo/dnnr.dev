@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment, useEffect, useMemo } from 'react';
+import React, { Fragment, useMemo } from 'react';
 import Image from 'next/image';
 
 import { usePosts } from '@/contexts/posts';
@@ -7,13 +7,10 @@ import { usePosts } from '@/contexts/posts';
 import { techList } from '../utils/constants';
 import IconButton from '@/components/IconButton';
 import Card from './components/Card';
+import Link from 'next/link';
 
 const Blog: React.FC = () => {
   const { posts } = usePosts()
-
-  useEffect(() => {
-    console.log("posts", posts);
-  }, [posts])
 
   const lastPost = useMemo(() => {
     return posts[0] || {} as IPost;
@@ -24,21 +21,23 @@ const Blog: React.FC = () => {
   if(!posts) return <Fragment />
 
   return (
-    <div className='flex flex-col p-16'>
+    <div className='flex flex-col p-4 md:p-16'>
       <section>
-        <div className='flex flex-row'>
+        <div className='flex flex-col md:flex-row'>
           <Image 
             src={lastPost?.banner?.url} 
             alt={lastPost?.slug} 
             width={640} 
             height={360}
-            className='flex w-2/4 object-contain rounded'
+            className='flex w-full object-contain rounded md:w-2/4'
           />
-          <div className='flex flex-col w-2/4 pl-8'>
-            <h3 className='title bold max-w-lg'>
-              {lastPost.title}
-            </h3>
-            <div className='flex flex-col mt-4 mb-3 max-h-40 overflow-hidden c-light-2'>
+          <div className='flex flex-col w-full mt-4 md:w-2/4 md:pl-8'>
+            <Link href={`/blog/post?slug=${lastPost?.slug}`}>
+              <h3 className='title bold max-w-lg'>
+                {lastPost.title}
+              </h3>
+            </Link>
+            <div className='flex flex-col mt-4 mb-3 overflow-hidden c-light-2'>
               {lastPost.subtitle}
             </div>
             <hr className='mb-4'/>
@@ -77,9 +76,10 @@ const Blog: React.FC = () => {
         </div>
       </section>
       <section className='mt-16'>
-        <ul className='flex flex-row flex-wrap'>
+        <h1 className='mb-4 bold'>Meus posts:</h1>
+        <ul className='flex flex-row flex-wrap justify-around md:justify-start'>
           {
-            posts.map(post => {
+            posts?.slice(0,8).map(post => {
               return(
                 <li key={post.slug}>
                   <Card post={post}/>
@@ -88,6 +88,12 @@ const Blog: React.FC = () => {
             })
           }
         </ul>
+        {
+          posts?.length > 8 ?
+          <Link href='/blog/all-posts'>
+            Ver mais
+          </Link> : ''
+        }
       </section>
     </div>
   );

@@ -1,7 +1,6 @@
 'use client'
 import React, { Fragment, useEffect, useState } from 'react';
 import Link from 'next/link';
-import './styles.css';
 
 import { MdOutlinePostAdd } from 'react-icons/md';
 import MenuDrawer from './MenuDrawer';
@@ -24,7 +23,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className='flex header-container flex-row w-full justify-between'>
+    <header className='flex p-2 pr-4 pl-4 flex-row w-full justify-between md:pr-16 md:pl-16'>
       <Link  href="/" className='flex flex-row w-full justify-start'>
         <span className='flex flex-row title bold align-bottom'>d<p className='c-highlight'>nr</p></span>
       </Link>

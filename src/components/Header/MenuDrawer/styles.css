@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 80vw;
-  /* height: 100vh; */
   transition: 0.5s all;
   position: absolute;
   left: -80vw;
