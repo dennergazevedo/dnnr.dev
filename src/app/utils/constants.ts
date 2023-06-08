@@ -2,6 +2,7 @@ import { SiVtex } from 'react-icons/si'
 import { IoLogoJavascript, IoLogoNodejs, IoLogoHtml5, IoLogoCss3 } from 'react-icons/io'
 import { FaReact, FaDocker } from 'react-icons/fa'
 import { VscJson } from 'react-icons/vsc'
+import { SiDotenv } from 'react-icons/si'
 
 export const techList = {
   'react': {
@@ -51,5 +52,11 @@ export const techList = {
     background: '#D1D9E6',
     color: '#000',
     Icon: VscJson
+  },
+  'dotenv': {
+    link: 'https://www.dotenv.org/',
+    background: '#ECD53F',
+    color: '#000',
+    Icon: SiDotenv
   },
 }
