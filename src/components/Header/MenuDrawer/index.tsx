@@ -25,7 +25,7 @@ const MenuDrawer: React.FC = () => {
       { /* Drawer Menu */ }
       <div className={`${isOpen? 'visible' : 'invisible'} fixed top-0 left-0 w-full h-full flex justify-start items-start z-10`}>
         <div className='drawer-overlay' onClick={toggle}/>
-        <div className={`drawer-body ${isOpen ? 'drawer-body--opened' : ''}`}>
+        <div className={`drawer-body h-full-safety ${isOpen ? 'drawer-body--opened' : ''}`}>
           <div className='flex flex-row justify-between w-full pr-8 pl-8 h-16'>
             <span className='flex title flex-row items-center bold align-bottom'>d<p className='c-highlight'>nr</p></span>
             <div className='flex justify-center items-center' onClick={toggle}>

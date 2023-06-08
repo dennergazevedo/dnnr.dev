@@ -1,18 +1,17 @@
 import React from 'react';
 
-import './styles.css';
 import Card from './Card';
 
 const Experience: React.FC = () => {
   return (
-    <section className='flex flex-col items-center justify-start h-full w-full experience-container'>
+    <section className='flex flex-col items-center justify-start h-full w-full p-8 md:p-32 md:pr-48 md:pl-48'>
       <div className='flex flex-col items-center justify-center mb-16'>
-        <p className='experience-subtitle c-highlight uppercase l-space-2 semi-bold'>4+ Anos de experiência</p>
-        <h1 className='experience-title bold capitalize c-light'>Meu resumo</h1>
+        <p className='text-xs c-highlight uppercase l-space-2 semi-bold md:text-base'>4+ Anos de experiência</p>
+        <h1 className='text-4xl bold capitalize c-light md:text-5xl'>Meu resumo</h1>
       </div>
       <div className='flex flex-col items-start justify-start w-full'>
-        <ul className='flex flex-row flex-wrap'>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+        <ul className='flex flex-row flex-wrap justify-around'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='Cia Hering (2021 - Atual)'
               name='Hering'
@@ -21,7 +20,7 @@ const Experience: React.FC = () => {
               key={'hering'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='Cia Hering (2021 - Atual)'
               name='Dzarm'
@@ -30,7 +29,7 @@ const Experience: React.FC = () => {
               key={'dzarm'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020 - 2021)'
               name='Usaflex'
@@ -39,7 +38,7 @@ const Experience: React.FC = () => {
               key={'usaflex'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020 - 2021)'
               name='Carrefour'
@@ -48,7 +47,7 @@ const Experience: React.FC = () => {
               key={'carrefour'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020)'
               name='Fila'
@@ -57,7 +56,7 @@ const Experience: React.FC = () => {
               key={'fila'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020)'
               name='Umbro'
@@ -66,7 +65,7 @@ const Experience: React.FC = () => {
               key={'Umbro'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020)'
               name='Intimissimi'
@@ -75,7 +74,7 @@ const Experience: React.FC = () => {
               key={'Intimissimi'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020)'
               name='Dengo'
@@ -84,7 +83,7 @@ const Experience: React.FC = () => {
               key={'Dengo'}
             />
           </li>
-          <li className='experience-card flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 w-96 hover:-translate-y-2 transition-all'>
+          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
             <Card 
               duration='CodeBy (2020-2021)'
               name='Extrafarma'
