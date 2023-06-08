@@ -81,7 +81,7 @@ const Blog: React.FC = () => {
           {
             posts?.slice(0,8).map(post => {
               return(
-                <li key={post.slug}>
+                <li key={post.slug} className='mr-4'>
                   <Card post={post}/>
                 </li>
               )

@@ -17,7 +17,7 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
         alt={post?.title} 
         width={640} 
         height={360}
-        className='w-56 rounded mb-4'
+        className='rounded mb-4 flex w-64'
       />
       <div>
         <h3 className='bold text-base w-60'>

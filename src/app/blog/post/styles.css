@@ -16,12 +16,13 @@
 
 .post-blog code{
   display: flex;
-  overflow: scroll;
+  overflow: auto;
   padding: 8px 16px;
   color: #FFF;
   background: #707070;
   border-radius: 4px;
   margin: 8px 0px;
+  width: 100%;
 }
 
 .post-blog strong,
@@ -30,7 +31,7 @@
 }
 
 .post-blog img{
-  margin: 8px 0px;
+  margin: 8px auto;
 }
 
 .post-blog blockquote{
