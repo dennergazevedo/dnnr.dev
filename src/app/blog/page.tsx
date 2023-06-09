@@ -80,7 +80,7 @@ const Blog: React.FC = () => {
       </section>
       <section className='mt-16'>
         <div className='flex flex-row items-center justify-between w-full mb-4'>
-          <h1 className='bold'>Meus posts</h1>
+          <h1 className='bold'>Outros posts</h1>
           {
             posts?.length > 6 && !showAll ?
             <div className='text-xs text-blue-400 cursor-pointer md:text-base' onClick={toggle}>
