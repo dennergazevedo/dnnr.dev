@@ -4,6 +4,7 @@ import { FaReact, FaDocker } from 'react-icons/fa'
 import { VscJson } from 'react-icons/vsc'
 import { SiDotenv, SiExpress } from 'react-icons/si'
 import { BiBookContent } from 'react-icons/bi'
+import { TbBrain } from 'react-icons/tb'
 
 export const techList = {
   'react': {
@@ -71,5 +72,11 @@ export const techList = {
     background: '#4AAEFE',
     color: '#FFF',
     Icon: BiBookContent
+  },
+  'ia': {
+    link: 'https://www.google.com/search?q=inteligencia+artificial',
+    background: '#8942A8',
+    color: '#FFF',
+    Icon: TbBrain
   },
 }
