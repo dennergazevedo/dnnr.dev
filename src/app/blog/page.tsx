@@ -16,7 +16,7 @@ const Blog: React.FC = () => {
   const toggle = () => setShowAll(!showAll)
 
   const lastPost = useMemo(() => {
-    return posts[0] || {} as IPost;
+    return posts[posts.length - 1] || {} as IPost;
   }, [posts])
 
   const techArray: any = techList
@@ -90,7 +90,7 @@ const Blog: React.FC = () => {
         </div>
         <ul className='flex flex-row flex-wrap justify-around md:justify-between'>
           {
-            posts?.slice(1, showAll ? posts?.length : 7).map(post => {
+            posts?.slice(0, showAll ? posts?.length - 1 : 6).map(post => {
               return(
                 <li key={post.slug} className='flex w-full mt-4 md:w-64'>
                   <Card post={post}/>
