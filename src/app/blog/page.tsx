@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment, useMemo } from 'react';
+import React, { Fragment, useMemo, useState } from 'react';
 import Image from 'next/image';
 
 import { usePosts } from '@/contexts/posts';
@@ -10,7 +10,10 @@ import Card from './components/Card';
 import Link from 'next/link';
 
 const Blog: React.FC = () => {
+  const [showAll, setShowAll] = useState<boolean>(false);
   const { posts } = usePosts()
+
+  const toggle = () => setShowAll(!showAll)
 
   const lastPost = useMemo(() => {
     return posts[0] || {} as IPost;
@@ -76,12 +79,20 @@ const Blog: React.FC = () => {
         </div>
       </section>
       <section className='mt-16'>
-        <h1 className='mb-4 bold'>Meus posts:</h1>
-        <ul className='flex flex-row flex-wrap justify-around md:justify-start'>
+        <div className='flex flex-row items-center justify-between w-full mb-4'>
+          <h1 className='bold'>Meus posts</h1>
           {
-            posts?.slice(0,8).map(post => {
+            posts?.length > 6 && !showAll ?
+            <div className='text-xs text-blue-400 cursor-pointer md:text-base' onClick={toggle}>
+              ver todos
+            </div> : ''
+          }
+        </div>
+        <ul className='flex flex-row justify-around md:justify-between'>
+          {
+            posts?.slice(0, showAll ? posts?.length : 6).map(post => {
               return(
-                <li key={post.slug} className='mr-4 mt-4'>
+                <li key={post.slug} className='flex w-full mt-4 md:w-64'>
                   <Card post={post}/>
                 </li>
               )
@@ -89,10 +100,10 @@ const Blog: React.FC = () => {
           }
         </ul>
         {
-          posts?.length > 8 ?
-          <Link href='/blog/all-posts'>
-            Ver mais
-          </Link> : ''
+          posts?.length > 6 && !showAll ?
+          <div className='flex mt-8 text-center text-blue-400 w-full justify-center' onClick={toggle}>
+            Ver todos
+          </div> : ''
         }
       </section>
     </div>

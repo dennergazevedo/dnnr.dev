@@ -11,13 +11,13 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
   const techArray: any = techList
 
   return (
-    <Link href={`/blog/post?slug=${post?.slug}`} className='flex flex-col p-4 rounded-lg linear-bg-white shadow-white cursor-pointer hover:-translate-y-2 transition-all'>
+    <Link href={`/blog/post?slug=${post?.slug}`} className='flex flex-col p-4 rounded-lg linear-bg-white shadow-white cursor-pointer hover:-translate-y-2 transition-all md:w-64'>
       <Image 
         src={post?.banner?.url} 
         alt={post?.title} 
         width={640} 
         height={360}
-        className='rounded mb-4 flex w-64'
+        className='rounded mb-4 flex w-full md:w-64'
       />
       <div>
         <h3 className='bold text-base w-60'>
