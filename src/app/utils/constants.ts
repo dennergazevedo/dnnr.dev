@@ -3,6 +3,7 @@ import { IoLogoJavascript, IoLogoNodejs, IoLogoHtml5, IoLogoCss3 } from 'react-i
 import { FaReact, FaDocker } from 'react-icons/fa'
 import { VscJson } from 'react-icons/vsc'
 import { SiDotenv, SiExpress } from 'react-icons/si'
+import { BiBookContent } from 'react-icons/bi'
 
 export const techList = {
   'react': {
@@ -64,5 +65,11 @@ export const techList = {
     background: '#FFF',
     color: '#000',
     Icon: SiExpress
+  },
+  'ux/ui': {
+    link: 'https://brasil.uxdesign.cc/',
+    background: '#4AAEFE',
+    color: '#FFF',
+    Icon: BiBookContent
   },
 }
