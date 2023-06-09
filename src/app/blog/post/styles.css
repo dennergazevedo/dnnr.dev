@@ -71,3 +71,17 @@
   align-items: center;
   padding: 16px;
 }
+
+.post-blog ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.post-blog ul li{
+  margin: 8px 0px;
+}
+
+.post-blog ul li::marker {
+  content: '»  ';
+  font-size: 0.75rem;
+}

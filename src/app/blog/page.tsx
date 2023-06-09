@@ -88,7 +88,7 @@ const Blog: React.FC = () => {
             </div> : ''
           }
         </div>
-        <ul className='flex flex-row flex-wrap justify-around md:justify-between md:flex-nowrap'>
+        <ul className='flex flex-row flex-wrap justify-around md:justify-between'>
           {
             posts?.slice(1, showAll ? posts?.length : 7).map(post => {
               return(
@@ -101,7 +101,7 @@ const Blog: React.FC = () => {
         </ul>
         {
           posts?.length > 7 && !showAll ?
-          <div className='flex mt-8 text-center text-blue-400 w-full justify-center' onClick={toggle}>
+          <div className='flex mt-8 text-center text-blue-400 w-full justify-center cursor-pointer' onClick={toggle}>
             Ver todos
           </div> : ''
         }
