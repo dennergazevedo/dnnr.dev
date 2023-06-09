@@ -90,7 +90,7 @@ const Blog: React.FC = () => {
         </div>
         <ul className='flex flex-row flex-wrap justify-around md:justify-between md:flex-nowrap'>
           {
-            posts?.slice(1, showAll ? posts?.length : 6).map(post => {
+            posts?.slice(1, showAll ? posts?.length : 7).map(post => {
               return(
                 <li key={post.slug} className='flex w-full mt-4 md:w-64'>
                   <Card post={post}/>
@@ -100,7 +100,7 @@ const Blog: React.FC = () => {
           }
         </ul>
         {
-          posts?.length > 6 && !showAll ?
+          posts?.length > 7 && !showAll ?
           <div className='flex mt-8 text-center text-blue-400 w-full justify-center' onClick={toggle}>
             Ver todos
           </div> : ''
