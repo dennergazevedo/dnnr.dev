@@ -10,11 +10,11 @@ const Technology: React.FC = () => {
         <p className='text-xs c-highlight uppercase l-space-2 semi-bold md:text-base'>4+ Anos de experiência</p>
         <h1 className='text-4xl bold capitalize c-light md:text-5xl'>Tecnologias</h1>
       </div>
-      <ul className='flex flex-col w-full md:flex-row md:flex-wrap'>
+      <ul className='flex flex-col w-full justify-around md:flex-row md:flex-wrap'>
         {
           techInfo.map(tech => {
             return (
-              <li key={tech.title} className='flex rounded-lg linear-bg-white shadow-white p-8 hover:-translate-y-2 transition-all mt-8 md:w-80 md:mr-8'>
+              <li key={tech.title} className='flex rounded-lg linear-bg-white shadow-white p-8 hover:-translate-y-2 transition-all mt-8 md:w-80'>
                 <TechCard 
                   title={tech.title}
                   Icon={tech.Icon}
