@@ -1,4 +1,4 @@
-import { SiVtex } from 'react-icons/si'
+import { SiJest, SiVtex } from 'react-icons/si'
 import { IoLogoJavascript, IoLogoNodejs, IoLogoHtml5, IoLogoCss3 } from 'react-icons/io'
 import { FaReact, FaDocker } from 'react-icons/fa'
 import { VscJson } from 'react-icons/vsc'
@@ -78,5 +78,11 @@ export const techList = {
     background: '#8942A8',
     color: '#FFF',
     Icon: TbBrain
+  },
+  'jest': {
+    link: 'https://jestjs.io/pt-BR/',
+    background: '#15C213',
+    color: '#FFF',
+    Icon: SiJest
   },
 }
