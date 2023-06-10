@@ -19,12 +19,12 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
         height={360}
         className='rounded mb-4 flex w-full md:w-64'
       />
-      <div>
-        <h3 className='bold text-base w-60'>
+      <div className='flex flex-col h-full justify-between'>
+        <h3 className='flex w-full bold text-base'>
           {post?.title}
         </h3>
-        <hr className='mt-4 mb-2'/>
         <div className='flex flex-col'>
+        <hr className='mt-4 mb-2'/>
           <span className='text-sm c-highlight small-caps l-space-2 mb-1'>Tecnologias</span>
           <ul className='flex'>
             {
