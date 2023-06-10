@@ -2,6 +2,13 @@
   margin: 8px 0px;
 }
 
+.post-blog p code{
+  display: unset;
+  padding: 4px 8px;
+  color: #FFF;
+  background: #CCC;
+}
+
 .post-blog h2{
   font-size: 1.5rem;
   font-weight: 600;
