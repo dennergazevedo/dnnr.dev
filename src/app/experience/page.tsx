@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Card from './Card';
+import { experiences } from './constants';
 
 const Experience: React.FC = () => {
   return (
@@ -11,87 +12,21 @@ const Experience: React.FC = () => {
       </div>
       <div className='flex flex-col items-start justify-start w-full'>
         <ul className='flex flex-row flex-wrap justify-around'>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='Cia Hering (2021 - Atual)'
-              name='Hering'
-              site='hering.com.br'
-              techs={['vtex', 'react', 'node', 'javascript', 'docker']}
-              key={'hering'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='Cia Hering (2021 - Atual)'
-              name='Dzarm'
-              site='dzarm.com.br'
-              techs={['vtex', 'react', 'node', 'javascript']}
-              key={'dzarm'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020 - 2021)'
-              name='Usaflex'
-              site='usaflex.com.br'
-              techs={['vtex', 'react', 'node', 'javascript']}
-              key={'usaflex'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020 - 2021)'
-              name='Carrefour'
-              site='mercado.carrefour.com.br'
-              techs={['vtex', 'react', 'javascript', 'html', 'css']}
-              key={'carrefour'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020)'
-              name='Fila'
-              site='fila.com.br'
-              techs={['vtex', 'javascript', 'html', 'css']}
-              key={'fila'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020)'
-              name='Umbro'
-              site='umbro.com.br'
-              techs={['vtex', 'javascript', 'html', 'css']}
-              key={'Umbro'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020)'
-              name='Intimissimi'
-              site='intimissimi.com.br'
-              techs={['vtex', 'javascript', 'html', 'css']}
-              key={'Intimissimi'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020)'
-              name='Dengo'
-              site='dengo.com.br'
-              techs={['vtex', 'javascript', 'html', 'css']}
-              key={'Dengo'}
-            />
-          </li>
-          <li className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
-            <Card 
-              duration='CodeBy (2020-2021)'
-              name='Extrafarma'
-              site='extrafarma.com.br'
-              techs={['vtex', 'react', 'node', 'javascript']}
-              key={'Extrafarma'}
-            />
-          </li>
+          {
+            experiences.map(item => {
+              return(
+                <li key={item.name} className='w-full mr-0 flex flex-col items-start justify-start linear-bg-white shadow-white rounded-md p-6 mb-8 hover:-translate-y-2 transition-all md:mr-4 md:ml-4 md:w-96'>
+                  <Card 
+                    duration={item.duration}
+                    name={item.name}
+                    site={item.site}
+                    techs={item.techs}
+                    key={item.name}
+                  />
+                </li>
+              )
+            })
+          }
         </ul>
       </div>
       <div className='mt-8'>

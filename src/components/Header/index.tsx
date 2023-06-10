@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 import { MdOutlinePostAdd } from 'react-icons/md';
@@ -39,15 +39,15 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li className='flex justify-center items-center mr-4 ml-4 c-highlight-hover'>
+              <Link href="/tech">
+                Tecnologias
+              </Link>
+            </li>
+            <li className='flex justify-center items-center mr-4 ml-4 c-highlight-hover'>
               <Link href="/experience">
                 Experiência
               </Link>
             </li>
-            {/* <li className='flex justify-center items-center mr-4 ml-4 c-highlight-hover'>
-              <Link href="/tech">
-                Tecnologias
-              </Link>
-            </li> */}
             <li className='flex justify-center items-center h-8 mr-4 ml-4 bg-highlight-hover bg-highlight pr-4 pl-4 rounded cursor-pointer'>
               <Link href="/blog" className='flex flex-row justify-center items-center'>
                 <MdOutlinePostAdd className='mr-2'/> Blog
