@@ -39,7 +39,7 @@ const Header: React.FC = () => {
               </Link>
             </li>
             <li className='flex justify-center items-center mr-4 ml-4 c-highlight-hover'>
-              <Link href="/tech">
+              <Link href="/technology">
                 Tecnologias
               </Link>
             </li>

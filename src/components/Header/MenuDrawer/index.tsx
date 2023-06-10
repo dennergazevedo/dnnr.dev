@@ -38,7 +38,7 @@ const MenuDrawer: React.FC = () => {
               <MdKeyboardArrowRight className='mr-2' />
               Página Inicial
             </Link>
-            <Link onClick={toggle} href='/tech' className='flex flex-row items-center uppercase c-light mb-6 tracking-wider'>
+            <Link onClick={toggle} href='/technology' className='flex flex-row items-center uppercase c-light mb-6 tracking-wider'>
               <MdKeyboardArrowRight className='mr-2' />
               Tecnologias
             </Link>
