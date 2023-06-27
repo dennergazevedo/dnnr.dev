@@ -14,7 +14,7 @@ const RecentFooter: React.FC = () => {
           </Link>
         </li>
         <li className='mr-8 opacity-40 hover:opacity-100'>
-          <Link href='https://www.linkedin.com/in/dennergazevedo/' target='_blank'>
+          <Link href='https://www.linkedin.com/in/dnnr/' target='_blank'>
             <RiLinkedinFill className='w-6 h-6'/>
           </Link>
         </li>

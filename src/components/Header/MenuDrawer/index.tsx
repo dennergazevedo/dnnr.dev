@@ -60,7 +60,7 @@ const MenuDrawer: React.FC = () => {
                   <IconButton link='https://github.com/dennergazevedo' Icon={RiGithubLine} />
                 </li>
                 <li className='mr-8'>
-                  <IconButton link='https://www.linkedin.com/in/dennergazevedo/' Icon={RiLinkedinFill} />
+                  <IconButton link='https://www.linkedin.com/in/dnnr/' Icon={RiLinkedinFill} />
                 </li>
                 <li className='mr-8'>
                   <IconButton link='https://www.instagram.com/dnnraz/' Icon={RiInstagramLine} />
