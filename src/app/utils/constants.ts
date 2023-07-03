@@ -4,6 +4,7 @@ import { FaReact, FaDocker } from 'react-icons/fa'
 import { VscJson } from 'react-icons/vsc'
 import { SiDotenv, SiExpress } from 'react-icons/si'
 import { BiBookContent } from 'react-icons/bi'
+import { BsShieldLock } from 'react-icons/bs'
 import { TbBrain, TbBrandNextjs } from 'react-icons/tb'
 
 export const techList = {
@@ -90,5 +91,11 @@ export const techList = {
     background: '#000',
     color: '#FFF',
     Icon: TbBrandNextjs
+  },
+  'security': {
+    link: 'https://www.google.com/search?q=Seguran%C3%A7a+da+Informa%C3%A7%C3%A3o',
+    background: '#12BFCC',
+    color: '#FFF',
+    Icon: BsShieldLock
   }
 }
