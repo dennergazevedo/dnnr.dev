@@ -35,7 +35,7 @@ const Blog: React.FC = () => {
             className='flex w-full object-contain rounded md:w-2/4'
           />
           <div className='flex flex-col w-full mt-4 md:w-2/4 md:pl-8'>
-            <Link href={`/blog/post?slug=${lastPost?.slug}`}>
+            <Link href={`/blog/post/${lastPost?.slug}`}>
               <h3 className='title bold max-w-lg'>
                 {lastPost.title}
               </h3>
@@ -52,7 +52,7 @@ const Blog: React.FC = () => {
                     const tech: Tech = techArray[item]
                     return (
                       <li key={lastPost.slug+'-'+item} className='mr-2'>
-                        <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small'/>
+                        <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small' name="Tech"/>
                       </li>
                     )
                   })

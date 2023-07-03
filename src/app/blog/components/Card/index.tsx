@@ -11,7 +11,7 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
   const techArray: any = techList
 
   return (
-    <Link href={`/blog/post?slug=${post?.slug}`} className='flex flex-col p-4 rounded-lg linear-bg-white shadow-white cursor-pointer hover:-translate-y-2 transition-all md:w-64'>
+    <Link href={`/blog/post/${post?.slug}`} className='flex flex-col p-4 rounded-lg linear-bg-white shadow-white cursor-pointer hover:-translate-y-2 transition-all md:w-64'>
       <Image 
         src={post?.banner?.url} 
         alt={post?.title} 
@@ -32,7 +32,7 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
                 const tech: Tech = techArray[item]
                 return (
                   <li key={post.slug+'-'+item} className='mr-2'>
-                    <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small'/>
+                    <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small' name="Tech"/>
                   </li>
                 )
               })

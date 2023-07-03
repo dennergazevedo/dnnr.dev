@@ -25,7 +25,7 @@ const Card: React.FC<TechCard> = ({ duration, name, site, techs } : TechCard) =>
               const tech: Tech = techArray[item]
               return (
                 <li key={name+item} className='mr-2'>
-                  <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small'/>
+                  <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small' name={name}/>
                 </li>
               )
             })

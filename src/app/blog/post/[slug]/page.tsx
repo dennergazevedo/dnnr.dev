@@ -1,20 +1,21 @@
 'use client'
 import React, { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
-import { useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/router';
+import Image from 'next/image';
+
 import { techList } from '@/app/utils/constants';
 import { usePosts } from '@/contexts/posts';
-import Image from 'next/image';
+
 import './styles.css';
 
 import { BsFillBookmarkFill } from 'react-icons/bs';
 import IconButton from '@/components/IconButton';
 
-const Post: React.FC = () => {
+const Post: React.FC<IDynamicPost> = ({ params }: IDynamicPost) => {
   const [post, setPost] = useState<IPost>({} as IPost);
   const { getPostsBySlug } = usePosts()
 
-  const searchParams = useSearchParams()
-  const slug = searchParams.get('slug')
+  const { slug } = params
 
   const techArray: any = techList
 
@@ -68,7 +69,7 @@ const Post: React.FC = () => {
                 const tech: Tech = techArray[item]
                   return (
                     <li key={post.slug+'-'+item} className='mr-2'>
-                      <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small'/>
+                      <IconButton link={tech.link} Icon={tech.Icon} background={tech.background} color={tech.color} size='small' name={tech.link}/>
                     </li>
                   )
                 })
