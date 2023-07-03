@@ -11,7 +11,7 @@ const PostsContext = createContext<IPostsContext>({} as IPostsContext);
 
 const GET_ALL_POSTS = gql`
   query GetAllPosts {
-    posts {
+    posts(last: 100) {
       id
       slug
       subtitle
@@ -52,7 +52,7 @@ const GET_POSTS_BY_TYPE = gql`
 `;
 
 const GET_POSTS_BY_SLUG = gql`
-  query GetPostsByType($postSlug: String!) {
+  query GetPostsBySlug($postSlug: String!) {
     posts(where: { slug: $postSlug }) {
       id
       slug
