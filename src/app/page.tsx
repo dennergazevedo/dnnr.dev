@@ -37,13 +37,13 @@ const Home: React.FC = () => {
             </label>
             <ul className='flex flex-row mt-4'>
               <li className='mr-8'>
-                <IconButton link='https://github.com/dennergazevedo' Icon={RiGithubLine} />
+                <IconButton link='https://github.com/dennergazevedo' Icon={RiGithubLine} name="Github"/>
               </li>
               <li className='mr-8'>
-                <IconButton link='https://www.linkedin.com/in/dnnr/' Icon={RiLinkedinFill} />
+                <IconButton link='https://www.linkedin.com/in/dnnr/' Icon={RiLinkedinFill} name="LinkedIn"/>
               </li>
               <li className='mr-8'>
-                <IconButton link='https://www.instagram.com/dnnraz/' Icon={RiInstagramLine} />
+                <IconButton link='https://www.instagram.com/dnnraz/' Icon={RiInstagramLine} name="Instagram"/>
               </li>
             </ul>
           </div>
@@ -54,13 +54,13 @@ const Home: React.FC = () => {
             </label>
             <ul className='flex flex-row mt-4'>
               <li className='mr-8'>
-                <IconButton link='https://www.javascript.com/' Icon={IoLogoJavascript} background='#FCDC00' color='#181818'/>
+                <IconButton link='https://www.javascript.com/' Icon={IoLogoJavascript} background='#FCDC00' color='#181818' name="Javascript"/>
               </li>
               <li className='mr-8'>
-                <IconButton link='https://react.dev/' Icon={FaReact} background='#087EA4' color='#FFF'/>
+                <IconButton link='https://react.dev/' Icon={FaReact} background='#087EA4' color='#FFF' name="React"/>
               </li>
               <li className='mr-8'>
-                <IconButton link='https://nodejs.org/' Icon={IoLogoNodejs} background='#5FA04E' color='#FFF'/>
+                <IconButton link='https://nodejs.org/' Icon={IoLogoNodejs} background='#5FA04E' color='#FFF' name="Node"/>
               </li>
             </ul>
           </div>

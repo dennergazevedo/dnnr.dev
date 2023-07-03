@@ -4,4 +4,5 @@ interface IconButton{
   background?: string
   color?: string
   size?: 'small' | 'medium' | 'large'
+  name: string
 }
