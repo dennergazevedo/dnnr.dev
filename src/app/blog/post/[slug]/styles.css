@@ -1,5 +1,11 @@
+
 .post-blog p{
   margin: 8px 0px;
+}
+
+.post-blog a{
+  text-decoration: underline;
+  color: #2a67e2;
 }
 
 .post-blog p code{
@@ -10,16 +16,17 @@
 }
 
 .post-blog h2{
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 8px 0px;
   margin-top: 24px;
 }
 
 .post-blog h3{
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin: 8px 0px;
+  margin-top: 24px;
 }
 
 .post-blog code{
@@ -40,6 +47,7 @@
 
 .post-blog img{
   margin: 8px auto;
+  min-width: 300px;
 }
 
 .post-blog blockquote{
@@ -82,6 +90,8 @@
 .post-blog ul{
   display: flex;
   flex-direction: column;
+  margin: 8px 0px;
+  padding-left: 16px;
 }
 
 .post-blog ul li{

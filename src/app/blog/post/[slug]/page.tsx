@@ -50,7 +50,7 @@ const Post: React.FC<IDynamicPost> = ({ params }: IDynamicPost) => {
           className='md:w-1/2'
         />
         <div className='flex flex-col md:w-1/2 md:pl-16'>
-          <h1 className='title bold mt-4 max-w-lg'>
+          <h1 className='title bold mt-4 max-w-lg leading-9'>
             {post?.title}
           </h1>
           <div className='flex flex-col mt-8'>
