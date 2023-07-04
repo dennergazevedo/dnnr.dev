@@ -6,6 +6,7 @@ import { SiDotenv, SiExpress } from 'react-icons/si'
 import { BiBookContent } from 'react-icons/bi'
 import { BsShieldLock } from 'react-icons/bs'
 import { TbBrain, TbBrandNextjs } from 'react-icons/tb'
+import { MdOutlineTipsAndUpdates } from 'react-icons/md'
 
 export const techList = {
   'react': {
@@ -97,5 +98,11 @@ export const techList = {
     background: '#12BFCC',
     color: '#FFF',
     Icon: BsShieldLock
+  },
+  'tips':{
+    link: '#',
+    background: '#ECD53F',
+    color: '#000',
+    Icon: MdOutlineTipsAndUpdates
   }
 }
