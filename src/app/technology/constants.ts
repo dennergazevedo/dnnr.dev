@@ -72,7 +72,7 @@ export const techInfo: ITechCard[] = [
     subtitle: 'Frameworks para Testes',
     link: 'https://www.cypress.io/',
     Icon: TbBrandCypress,
-    background: '#15C213',
+    background: '#4A55E2',
     color: '#FFF',
     text: 'Criação de testes para aplicativos da Web modernos, depurá-los visualmente e executá-los automaticamente em suas compilações de integração contínua.',
   },
