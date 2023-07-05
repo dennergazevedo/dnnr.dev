@@ -88,7 +88,7 @@ const Blog: React.FC = () => {
             </div> : ''
           }
         </div>
-        <ul className='flex flex-row flex-wrap justify-around md:justify-between'>
+        <ul className='flex flex-row flex-wrap justify-around'>
           {
             posts?.slice(0, showAll ? posts?.length - 1 : 6).map(post => {
               return(

@@ -20,7 +20,7 @@ const Card: React.FC<PostCard> = ({ post }: PostCard) => {
         className='rounded mb-4 flex w-full md:w-64'
       />
       <div className='flex flex-col h-full justify-between'>
-        <h3 className='flex w-full bold text-base'>
+        <h3 className='flex w-full bold text-sm md:text-base'>
           {post?.title}
         </h3>
         <div className='flex flex-col'>
