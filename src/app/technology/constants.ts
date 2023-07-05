@@ -1,16 +1,44 @@
-import { FaReact, FaDocker, FaHtml5 } from "react-icons/fa";
+import { FaReact, FaDocker, FaHtml5, FaSass } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoNodejs, IoLogoPython, IoLogoCss3 } from "react-icons/io";
-import { SiDjango } from 'react-icons/si';
+import { SiDjango, SiGraphql, SiTailwindcss, SiAngular, SiJest, SiRedux } from 'react-icons/si';
+import { TbBrandNextjs, TbBrandCypress } from 'react-icons/tb';
 
 export const techInfo: ITechCard[] = [
   {
     title: 'ReactJS + Native',
-    subtitle: 'Typescript, Next, Gatsby & mais',
+    subtitle: 'Frameworks para Interfaces nativas e WEB',
     link: 'https://react.dev/',
     Icon: FaReact,
     background: '#087EA4',
     color: '#FFF',
     text: 'Biblioteca JavaScript para criação de interfaces de usuário interativas e reativas. Componentes reutilizáveis e atualização eficiente de dados são seus pontos fortes.',
+  },
+  {
+    title: 'NextJS',
+    subtitle: 'Interfaces WEB',
+    link: 'https://nextjs.org/',
+    Icon: TbBrandNextjs,
+    background: '#000',
+    color: '#FFF',
+    text: 'Permite que você crie aplicativos da Web de pilha completa, estendendo os recursos mais recentes do React e integrando poderosas ferramentas JavaScript baseadas em Rust para compilações mais rápidas.',
+  },
+  {
+    title: 'Angular',
+    subtitle: 'Framework para interfaces WEB',
+    link: 'https://angular.io/',
+    Icon: SiAngular,
+    background: '#DD0031',
+    color: '#FFF',
+    text: 'Biblioteca JavaScript para criação de interfaces de usuário interativas e reativas. Componentes reutilizáveis e atualização eficiente de dados são seus pontos fortes.',
+  },
+  {
+    title: 'Redux',
+    subtitle: 'Container de estados',
+    link: 'https://redux.js.org/',
+    Icon: SiRedux,
+    background: '#764ABC',
+    color: '#FFF',
+    text: 'Biblioteca de gerenciamento de estado previsível para aplicativos JavaScript, que permite centralizar e controlar o estado de uma aplicação de forma consistente.',
   },
   {
     title: 'NodeJS',
@@ -31,6 +59,24 @@ export const techInfo: ITechCard[] = [
     text: 'Linguagem de programação de alto nível, amplamente utilizada no desenvolvimento web. É essencial para criar aplicativos web modernos e interativos.',
   },
   {
+    title: 'Jest',
+    subtitle: 'Frameworks para Testes',
+    link: 'https://jestjs.io/pt-BR/',
+    Icon: SiJest,
+    background: '#15C213',
+    color: '#FFF',
+    text: 'Jest é um poderoso Framework de Testes em JavaScript com um foco na simplicidade.',
+  },
+  {
+    title: 'Cypress',
+    subtitle: 'Frameworks para Testes',
+    link: 'https://www.cypress.io/',
+    Icon: TbBrandCypress,
+    background: '#15C213',
+    color: '#FFF',
+    text: 'Criação de testes para aplicativos da Web modernos, depurá-los visualmente e executá-los automaticamente em suas compilações de integração contínua.',
+  },
+  {
     title: 'Docker',
     subtitle: 'Containers, Images, CI/CD & mais',
     link: 'https://www.docker.com/',
@@ -38,6 +84,15 @@ export const techInfo: ITechCard[] = [
     background: '#003F8C',
     color: '#FFF',
     text: 'Plataforma de virtualização de contêineres que permite empacotar, distribuir e executar aplicativos de forma isolada, facilitando a implantação e o gerenciamento de ambientes de desenvolvimento e produção.',
+  },
+  {
+    title: 'GraphQL',
+    subtitle: 'Query language for API',
+    link: 'https://graphql.org/',
+    Icon: SiGraphql,
+    background: '#DE33A6',
+    color: '#FFF',
+    text: 'GraphQL é uma linguagem de consulta para APIs e um tempo de execução para atender a essas consultas com seus dados existentes.',
   },
   {
     title: 'Django REST',
@@ -74,5 +129,23 @@ export const techInfo: ITechCard[] = [
     background: '#3492CB',
     color: '#FFF',
     text: 'Linguagem de estilo usada para definir a apresentação visual de documentos HTML. Com o CSS, é possível controlar layout, cores, fontes, espaçamento e outros aspectos visuais, melhorando a aparência e a usabilidade das páginas da web.',
+  },
+  {
+    title: 'TailwindCSS',
+    subtitle: 'CSS inline',
+    link: 'https://tailwindcss.com/',
+    Icon: SiTailwindcss,
+    background: '#38BDF8',
+    color: '#FFF',
+    text: 'Estrutura de design CSS altamente personalizável e de baixo nível que permite criar rapidamente interfaces responsivas e estilizadas, usando classes utilitárias pré-definidas.',
+  },
+  {
+    title: 'SASS',
+    subtitle: 'Estilização',
+    link: 'https://sass-lang.com/',
+    Icon: FaSass,
+    background: '#BF4080',
+    color: '#FFF',
+    text: 'Linguagem de script de pré-processador que é interpretada ou compilada em Cascading Style Sheets (CSS).',
   }
 ]
