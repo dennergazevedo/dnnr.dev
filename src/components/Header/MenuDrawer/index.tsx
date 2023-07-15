@@ -50,6 +50,10 @@ const MenuDrawer: React.FC = () => {
               <MdKeyboardArrowRight className='mr-2' />
               Blog
             </Link>
+            <Link onClick={toggle} href='https://os.dnnr.dev/' className='flex flex-row items-center uppercase c-light mb-6 tracking-wider'>
+              <MdKeyboardArrowRight className='mr-2' />
+              dnr.OS
+            </Link>
 
             <div className='flex flex-col absolute bottom-8 left-4'>
               <label className='uppercase l-space-2 semi-bold'>

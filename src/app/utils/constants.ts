@@ -8,6 +8,12 @@ import { BsShieldLock } from 'react-icons/bs'
 import { TbBrain, TbBrandNextjs } from 'react-icons/tb'
 import { MdOutlineTipsAndUpdates } from 'react-icons/md'
 
+export const typeFilter = [
+  'frontend',
+  'backend',
+  'tech'
+]
+
 export const techList = {
   'react': {
     link: 'https://react.dev/',

@@ -4,7 +4,8 @@ import Image from 'next/image';
 
 import { usePosts } from '@/contexts/posts';
 
-import { techList } from '../utils/constants';
+import { techList, typeFilter } from '../utils/constants';
+
 import IconButton from '@/components/IconButton';
 import Card from './components/Card';
 import Link from 'next/link';
@@ -36,7 +37,7 @@ const Blog: React.FC = () => {
           />
           <div className='flex flex-col w-full mt-4 md:w-2/4 md:pl-8'>
             <Link href={`/blog/post/${lastPost?.slug}`}>
-              <h3 className='title bold max-w-lg'>
+              <h3 className='title bold leading-9 max-w-lg'>
                 {lastPost.title}
               </h3>
             </Link>
@@ -81,22 +82,24 @@ const Blog: React.FC = () => {
       <section className='mt-16'>
         <div className='flex flex-row items-center justify-between w-full mb-4'>
           <h1 className='bold'>Outros posts</h1>
-          {
-            posts?.length > 6 && !showAll ?
-            <div className='text-xs text-blue-400 cursor-pointer md:text-base' onClick={toggle}>
-              ver todos
-            </div> : ''
-          }
+          {/* <ul className='flex flex-row items-center'>
+            <span>Filtros:</span>
+            {
+              typeFilter.map((filter) => (
+                <li key={`search-filter--${filter}`} className='flex rounded-full p-4 pt-1 pb-1 ml-2 cursor-pointer bg-gray-300 text-white hover:bg-black'>
+                  {filter}
+                </li>
+              ))
+            }
+          </ul> */}
         </div>
         <ul className='flex flex-row flex-wrap justify-around'>
           {
-            posts?.slice(0, showAll ? posts?.length - 1 : 6).map(post => {
-              return(
-                <li key={post.slug} className='flex w-full mt-4 md:w-64'>
-                  <Card post={post}/>
-                </li>
-              )
-            })
+            posts?.slice(0, showAll ? posts?.length - 1 : 6).map(post => (
+              <li key={post.slug} className='flex w-full mt-4 md:w-64'>
+                <Card post={post}/>
+              </li>
+            ))
           }
         </ul>
         {

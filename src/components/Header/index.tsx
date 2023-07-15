@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-import { MdOutlinePostAdd } from 'react-icons/md';
+import { TbDeviceImac } from 'react-icons/tb';
 import MenuDrawer from './MenuDrawer';
 
 const Header: React.FC = () => {
@@ -48,9 +48,14 @@ const Header: React.FC = () => {
                 Experiência
               </Link>
             </li>
+            <li className='flex justify-center items-center mr-4 ml-4 c-highlight-hover'>
+              <Link href="/blog">
+                Blog
+              </Link>
+            </li>
             <li className='flex justify-center items-center h-8 mr-4 ml-4 bg-highlight-hover bg-highlight pr-4 pl-4 rounded cursor-pointer'>
-              <Link href="/blog" className='flex flex-row justify-center items-center'>
-                <MdOutlinePostAdd className='mr-2'/> Blog
+              <Link href="https://os.dnnr.dev/" className='flex flex-row justify-center items-center'>
+                <TbDeviceImac className='mr-2'/> dnr.OS
               </Link>
             </li>
           </ul>
