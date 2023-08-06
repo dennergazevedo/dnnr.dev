@@ -6,6 +6,7 @@ const Head: React.FC = () => {
     <head>
       <title>dnnr</title>
       <meta name="description" content="Denner Azevedo - Web Developer" />
+      <link rel="canonical" href="https://dnnr.dev/" />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-3T376Z4QFC"/>
       <Script id="google-analytics">
         {`
