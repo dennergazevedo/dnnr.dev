@@ -67,8 +67,8 @@ const Home: React.FC = () => {
         </div>
       </div>
       <div className='flex flex-col justify-start items-center w-full h-72 md:w-1/2 md:h-1/2 image-block'>
-        <div className='flex relative rounded-3xl linear-bg-white shadow-white w-4/5 h-full max-w-md image-block'>
-          <Image src={Me} alt='profile-photo' className='flex rounded-3xl absolute bottom-0 left-0 w-full' />
+        <div className='flex relative rounded-3xl linear-bg-white shadow-white w-4/5 h-full max-w-sm image-block '>
+          <Image src={Me} alt='profile-photo' className='flex rounded-3xl absolute bottom-0 left-0 w-full max-w-sm' />
         </div>
       </div>
     </section>
