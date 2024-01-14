@@ -1,7 +1,8 @@
 import { FaReact, FaDocker, FaHtml5, FaSass } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoNodejs, IoLogoPython, IoLogoCss3 } from "react-icons/io";
-import { SiDjango, SiGraphql, SiTailwindcss, SiAngular, SiJest, SiRedux } from 'react-icons/si';
+import { SiDjango, SiGraphql, SiTailwindcss, SiAngular, SiJest, SiRedux, SiSpringboot } from 'react-icons/si';
 import { TbBrandNextjs, TbBrandCypress } from 'react-icons/tb';
+import { DiJava } from "react-icons/di";
 
 export const techInfo: ITechCard[] = [
   {
@@ -93,6 +94,24 @@ export const techInfo: ITechCard[] = [
     background: '#DE33A6',
     color: '#FFF',
     text: 'GraphQL é uma linguagem de consulta para APIs e um tempo de execução para atender a essas consultas com seus dados existentes.',
+  },
+  {
+    title: 'Java',
+    subtitle: 'APIs & Auth',
+    link: 'https://www.java.com/pt-BR/',
+    Icon: DiJava,
+    background: '#D84924',
+    color: '#FFF',
+    text: 'Linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si.',
+  },
+  {
+    title: 'Spring Boot',
+    subtitle: 'APIs & Microservices',
+    link: 'https://spring.io/projects/spring-boot/',
+    Icon: SiSpringboot,
+    background: '#6DB33F',
+    color: '#FFF',
+    text: 'Ferramenta que facilita e agiliza o desenvolvimento de aplicativos da web e de microsserviços com o Spring Framework',
   },
   {
     title: 'Django REST',
