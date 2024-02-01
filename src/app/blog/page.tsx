@@ -37,9 +37,9 @@ const Blog: React.FC = () => {
           />
           <div className='flex flex-col w-full mt-4 md:w-2/4 md:pl-8'>
             <Link href={`/blog/post/${lastPost?.slug}`}>
-              <h3 className='title bold leading-9 max-w-lg'>
+              <h1 className='title bold leading-9 max-w-lg'>
                 {lastPost.title}
-              </h3>
+              </h1>
             </Link>
             <div className='flex flex-col mt-4 mb-3 overflow-hidden c-light-2'>
               {lastPost.subtitle}
@@ -81,10 +81,10 @@ const Blog: React.FC = () => {
       </section>
       <section className='mt-16'>
         <div className='flex flex-row items-center justify-between w-full mb-4'>
-          <h1 className='bold'>Outros posts</h1>
+          <h3 className='bold'>Outros posts</h3>
           {/* <ul className='flex flex-row items-center'>
             <span>Filtros:</span>
-            {
+            { 
               typeFilter.map((filter) => (
                 <li key={`search-filter--${filter}`} className='flex rounded-full p-4 pt-1 pb-1 ml-2 cursor-pointer bg-gray-300 text-white hover:bg-black'>
                   {filter}
@@ -93,12 +93,12 @@ const Blog: React.FC = () => {
             }
           </ul> */}
         </div>
-        <ul className='flex flex-row flex-wrap justify-around'>
+        <ul className='flex flex-row flex-wrap justify-start gap-4'>
           {
             posts?.slice(0, showAll ? posts?.length - 1 : 6).map(post => (
               <li key={post.slug} className='flex w-full mt-4 md:w-64'>
                 <Card post={post}/>
-              </li>
+              </li>  
             ))
           }
         </ul>
