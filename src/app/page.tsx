@@ -11,7 +11,7 @@ import IconButton from '@/components/IconButton';
 const Home: React.FC = () => {
 
   return (
-    <section className='init-block flex flex-col-reverse p-6 pt-32 items-center justify-center h-full md:flex-row md:p-32 md:flex-wrap-reverse md:justify-between'>
+    <section className='init-block flex flex-col-reverse p-6 items-center justify-center h-full md:flex-row md:p-32 md:flex-wrap-reverse md:justify-between'>
       <div className='flex flex-col mt-12 justify-center items-center w-full md:w-auto md:mt-0 md:justify-start md:items-start main-block'>
         <h3 className='text-1xl cursor-default mb-4 uppercase l-space-8'>
           Hello World!

@@ -132,10 +132,6 @@ body {
     width: 320px;
     height: 320px;
   }
-
-  @media (max-width: 1200px){
-    display: none !important;
-  }
 }
 
 .main-block{
@@ -145,8 +141,12 @@ body {
   }
 }
 
-.init-block{
-  @media (max-width: 1200px){
-    justify-content: center !important;
+@media (max-width: 1200px){
+  .image-block{
+    display: none !important;
   }
+
+  .init-block{
+    justify-content: center !important;
+  }  
 }
