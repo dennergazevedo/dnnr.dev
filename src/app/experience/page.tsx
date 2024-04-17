@@ -7,7 +7,7 @@ const Experience: React.FC = () => {
   return (
     <section className='flex flex-col items-center justify-start h-full w-full p-8 md:p-32'>
       <div className='flex flex-col items-center justify-center mb-16'>
-        <p className='text-xs c-highlight uppercase l-space-2 semi-bold md:text-base'>5+ Anos de experiência</p>
+        <p className='text-xs c-highlight uppercase l-space-2 semi-bold md:text-base'>6+ Anos de experiência</p>
         <h1 className='text-4xl bold capitalize c-light md:text-5xl'>Meu resumo</h1>
       </div>
       <div className='flex flex-col items-start justify-start w-full'>

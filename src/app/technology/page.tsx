@@ -7,10 +7,10 @@ const Technology: React.FC = () => {
   return (
     <section className='flex flex-col items-center justify-start h-full w-full p-8 md:p-32 md:pr-48 md:pl-48'>
       <div className='flex flex-col items-center justify-center mb-16'>
-        <p className='text-xs c-highlight uppercase l-space-2 semi-bold md:text-base'>5+ Anos de experiência</p>
+        <p className='text-xs c-highlight uppercase l-space-2 semi-bold md:text-base'>6+ Anos de experiência</p>
         <h1 className='text-4xl bold capitalize c-light md:text-5xl'>Tecnologias</h1>
       </div>
-      <ul className='flex flex-col w-full justify-around md:flex-row md:flex-wrap'>
+      <ul className='flex flex-col w-full justify-around gap-2 md:flex-row md:flex-wrap'>
         {
           techInfo.map(tech => {
             return (

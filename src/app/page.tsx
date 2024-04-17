@@ -11,8 +11,8 @@ import IconButton from '@/components/IconButton';
 const Home: React.FC = () => {
 
   return (
-    <section className='flex flex-col-reverse p-6 pt-32 items-center justify-center h-full md:flex-row md:p-32 md:pr-48 md:pl-48 md:pt-60'>
-      <div className='flex flex-col mt-12 justify-center items-center w-full md:w-1/2 md:mt-0 md:justify-start md:items-start'>
+    <section className='init-block flex flex-col-reverse p-6 pt-32 items-center justify-center h-full md:flex-row md:p-32 md:pr-48 md:pl-48 md:pt-48 md:flex-wrap-reverse md:justify-between'>
+      <div className='flex flex-col mt-12 justify-center items-center w-full md:w-auto md:mt-0 md:justify-start md:items-start main-block'>
         <h3 className='text-1xl cursor-default mb-4 uppercase l-space-8'>
           Hello World!
         </h3>
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-col justify-start items-center w-full h-72 md:w-1/2 md:h-1/2 md:items-center image-block'>
+      <div className='flex flex-col justify-start items-center w-full h-72 md:w-auto md:h-1/2 md:items-end image-block md:mb-12 main-block'>
         <div className='flex justify-center items-center relative rounded-3xl linear-bg-white shadow-white w-4/5 h-full max-w-sm image-block '>
           <Image src={Me} alt='profile-photo' className='flex rounded-3xl absolute bottom-0 left-0 w-full max-w-sm' />
         </div>
