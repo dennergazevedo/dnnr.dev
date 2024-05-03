@@ -137,9 +137,15 @@ body {
 .main-block{
   @media (min-width: 640px){
     min-width: 320px;
-    max-width: 500px;
+    max-width: 600px;
     min-height: 320px;
   }
+}
+
+.init-block{
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 32px;
 }
 
 @media (max-width: 1200px){
